@@ -1,0 +1,129 @@
+@font-face {/* title font */
+  font-family: "Kano";
+  src: url(../fonts/Kano.woff);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+*{
+  margin: 0;padding: 0;list-style: none;font-style: normal;color: #333;
+  text-decoration: none;font-family: "Noto Sans KR";
+}
+
+/* header */
+header{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box;
+}
+header .menu{
+  position: absolute;
+  left: 100px;
+  top: 93px;
+  z-index: 101;
+}
+header .menu .line1{
+  width: 45px;
+  height: 2px;
+  background-color: #fff;
+}
+header .menu .line2{
+  width: 35px;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+header h1{
+  width: 450px;
+  margin: auto;
+}
+header h1 a img{
+  width: 100%;
+}
+
+header div.info{
+  position: absolute;
+  right: 100px;
+  top: 93px;
+}
+header div.info ul{
+  display: flex;
+}
+header div.info ul li{padding: 0 15px;}
+header div.info ul li a{
+  font-family: "Kano";
+  font-size: 1.500em;
+}
+
+/* main visual */
+.main-visual{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.main-visual div.black-bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: black;
+  z-index: 0;
+}
+.main-visual .img-box{
+  width: 1440px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.main-visual .img-box img{
+  width: 100%;
+  display: block;
+}
+.main-visual p{
+  position: absolute;
+  left: 100px;
+  bottom: 50px;
+  color: #fff;
+  font-size: 6.000em;
+}
+
+/* section slide */
+.slide-area{
+  position: relative;
+  width: 100%;
+  height: 900px;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+}
+.slide-area #slider-div{
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.slide-area #slider-div .cont{
+  width: 350px;
+  height: 620px;
+}
+.slide-area #slider-div .cont1{}
+.slide-area #slider-div .cont2{}
+.slide-area #slider-div .cont3{}
+.slide-area #slider-div .cont4{}
+
+.slide-area #slider-div .cont .img-box{
+  width: 350px;
+}
+.slide-area #slider-div .cont .img-box img{
+  width: 100%;
+}
+.slide-area #slider-div .cont p:first-child{}
+.slide-area #slider-div .cont .price{}
+.slide-area #slider-div .cont p:last-child{}

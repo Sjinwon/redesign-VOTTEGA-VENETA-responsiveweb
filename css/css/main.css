@@ -1,0 +1,1265 @@
+@charset "UTF-8";
+
+*{margin: 0;padding: 0;list-style: none;text-decoration: none;font-style: normal;color: #333;font-family: "BMJUA";}
+
+@font-face {
+  font-family: 'BMJUA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  /* border-bottom: 1px solid #FFB0DA; */
+}
+
+header div.info{
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #FFB0DA;
+}
+header div.info ul{
+  display: flex;
+  justify-content: center;
+}
+header div.info ul li{margin-left: 15px;}
+header div.info ul li a{
+  display: block;
+  color: #333;
+  line-height: 30px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+header div.info ul li a:hover{
+  color: #FFB0DA;
+}
+
+header h1{
+  position: absolute;
+  left: 100px;
+  width: 100px;
+}
+header h1 a img{
+  width: 100%;
+}
+header div.nav-bg{
+  background-color: #fff;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  border-bottom: 1px solid #FFB0DA;
+  display: none; /* display : none */
+}
+header nav{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  z-index: 100;
+}
+header nav ul.gnb{
+  display: flex;
+  /* margin-right: 50px; */
+}
+header nav ul.gnb > li{
+  padding: 5px 50px;
+}
+header nav ul.gnb > li > a{
+  color: #333;
+  transition: all 0.4s;
+}
+header nav ul.gnb > li:hover > a{
+  color: #F04DA3;
+}
+
+header nav ul.gnb li > ul.sub{
+  position: absolute;
+  margin-top: 10px;
+  /* sub.nav */
+  display: none; 
+}
+header nav ul.gnb li > ul.sub > li{
+  margin: 20px 0 0 0;
+}
+header nav ul.gnb li > ul.sub > li > a{
+  display: block;
+  font-size: 14px;
+  color: #333;
+}
+header .nav-bg{
+  width: 100%;
+  height: 350px;
+  background: #F04DA3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+
+
+
+
+.main-visual{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.main-visual .visual__img{
+  position: absolute;
+  width: 500px;
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.main-visual .visual__img img{
+  width: 100%;
+}
+.main-visual .typo{
+  position: absolute;
+  left: 50%;
+  top: 68%;
+  transform: translate(-50% , -50%);
+}
+.main-visual .typo h3{
+  font-size: 48px;
+  color: #F04DA3;
+  font-family: "RixInooAriDuriR";
+  font-weight: normal;
+}
+.main-visual .typo p{
+  font-family: "RixInooAriDuriR";
+  font-size: 40px;
+  color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #F04DA3;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.youtube{
+  width: 100%;
+  height: 750px;
+  position: relative;
+  border-top: 1px solid #FFB0DA;
+}
+.youtube .youtube-area{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+.youtube .youtube-area #player{
+  position: absolute;
+  right: 0;
+  width: 59.94791666666667%;
+  height: 650px;
+}
+.youtube .youtube-area .typo1{
+  display: flex;
+  position: absolute;
+  left: 12.5%;
+}
+.youtube .youtube-area .typo1 h3{
+  font-size: 24px;
+}
+.youtube .youtube-area .typo1 span{
+  font-size: 24px;
+}
+
+.youtube .youtube-area .typo2{
+  position: absolute;
+  left: 12.5%;
+  bottom: 100px;
+  width: 400px;
+}
+.youtube .youtube-area .typo2 p{
+  line-height: 1.5;
+  font-size: 18px;
+}
+.brmenu{
+  width: 100%;
+  height: 1136px;
+  background-color: #F8F8F8;
+}
+.brmenu h3{
+  position: absolute;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+.brmenu .inner{
+  width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.brmenu .inner .contents{
+  position: relative;
+  background: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.brmenu .inner .contents1{
+  top: 186px;
+  width: 550px;
+  height: 400px;
+}
+.brmenu .inner .contents1 span{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brmenu .inner .contents1 p{
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-size: 20px;
+}
+.brmenu .inner .contents1 button{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #FFB0DA;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); */
+}
+.brmenu .inner .contents1 button:hover{
+  position: absolute;
+  bottom: 37px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+}
+.brmenu .inner .contents1 div{
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+.brmenu .inner .contents2{
+  top: 186px;
+  width: 364px;
+  height: 400px;
+}
+.brmenu .inner .contents2 span{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brmenu .inner .contents2 p{
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-size: 20px;
+}
+.brmenu .inner .contents2 button{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #FFB0DA;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 3;
+}
+.brmenu .inner .contents2 button:hover{
+  position: absolute;
+  bottom: 37px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+}
+.brmenu .inner .contents2 div{
+  position: absolute;
+  right: -80px;
+  bottom: -40px;
+  width: 360px;
+}
+.brmenu .inner .contents2 div img{
+  width: 100%;
+}
+.brmenu .inner .contents3{
+  top: 186px;
+  width: 426px;
+  height: 400px;
+}
+.brmenu .inner .contents3 span{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brmenu .inner .contents3 p{
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-size: 20px;
+}
+.brmenu .inner .contents3 button{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #FFB0DA;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 3;
+}
+.brmenu .inner .contents3 button:hover{
+  position: absolute;
+  bottom: 37px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+}
+.brmenu .inner .contents3 div{
+  position: absolute;
+  right: -70px;
+  bottom: -40px;
+  width: 400px;
+}
+.brmenu .inner .contents3 div img{
+  width: 100%;
+}
+
+.brmenu .inner .contents4{
+  top: 236px;
+  width: 434px;
+  height: 400px;
+}
+.brmenu .inner .contents4 span{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brmenu .inner .contents4 p{
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-size: 20px;
+}
+.brmenu .inner .contents4 button{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #FFB0DA;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 3;
+}
+.brmenu .inner .contents4 button:hover{
+  position: absolute;
+  bottom: 37px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+}
+.brmenu .inner .contents4 div{
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
+  width: 300px;
+}
+.brmenu .inner .contents4 div img{
+  width: 100%;
+}
+
+.brmenu .inner .contents5{
+  top: 236px;
+  width: 480px;
+  height: 400px;
+}
+.brmenu .inner .contents5 span{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brmenu .inner .contents5 p{
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  font-size: 20px;
+}
+.brmenu .inner .contents5 button{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #FFB0DA;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 3;
+}
+.brmenu .inner .contents5 button:hover{
+  position: absolute;
+  bottom: 37px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+}
+.brmenu .inner .contents5 div{
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 330px;
+}
+.brmenu .inner .contents5 div img{
+  width: 100%;
+}
+
+.brmenu .inner .contents6{
+  top: 236px;
+  width: 426px;
+  height: 400px;
+}
+.brmenu .inner .contents6 span{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.brmenu .inner .contents6 p{
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  font-size: 20px;
+}
+.brmenu .inner .contents6 button{
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  background: #FFB0DA;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 3;
+}
+.brmenu .inner .contents6 button:hover{
+  position: absolute;
+  bottom: 37px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+}
+.brmenu .inner .contents6 div{
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  width: 220px;
+}
+.brmenu .inner .contents6 div img{
+  width: 100%;
+}
+.brevent{
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+.brevent div.inner{
+  width: 1440px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.brevent div.inner .inner__typo{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #FFB0DA;
+}
+.brevent .inner .inner__typo span{
+  font-size: 24px;
+  line-height: 150px;
+}
+.brevent .inner .inner__typo h3{
+  font-size: 24px;
+  line-height: 150px;
+}
+
+.brevent .inner .slider-area{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 550px;
+}
+.brevent .inner .slider-area #slider-div .cont{
+  height: 500px;
+}
+.brevent .inner .slider-area #slider-div .cont .contbox{
+  margin: 20px auto;
+  width: 330px;
+  height: 459px;
+  background-color: #fdfdfd;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.brevent .inner .slider-area #slider-div .cont .contbox .cont__main-img{
+  width: 330px;
+}
+.brevent .inner .slider-area #slider-div .cont .contbox .cont__main-img img{
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.brevent .inner .slider-area #slider-div .cont .contbox .cont__sub-img{
+  margin: 20px;
+}
+.brevent .inner .slider-area #slider-div .cont .contbox .cont__typo{
+  margin-left: 20px;
+  line-height: 1.5;
+}
+.brevent .inner .slider-area #slider-div .cont .contbox .cont__typo span{
+  font-size: 14px;
+  opacity: 0.5;
+}
+.br-ad{
+  width: 100%;
+
+}
+.br-ad .ad__box{
+  width: 100%;
+  display: flex;
+}
+.br-ad .ad__box img{
+  width: 50%;
+}
+.br-ad .ad-img{
+  width: 100%;
+}
+.br-ad .ad-img img{
+  width: 100%;
+}
+footer{
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+footer h1{
+  width: 400px;
+  height: 165px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 50px auto;
+}
+footer h1 a{
+  width: 100%;
+}
+footer h1 a img{
+  width: 100%;
+  display: block;
+}
+footer nav{
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 160px;
+  border-top: 1px solid #FFB0DA;
+  border-bottom: 1px solid #FFB0DA;
+}
+footer nav ul{
+  margin: auto;
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+}
+footer nav ul li{
+  text-align: center;
+}
+footer nav ul li a{
+  line-height: 80px;
+}
+footer .foot-box1{
+  width: 1440px;
+  position: absolute;
+  top: 275px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot-box1 address{
+  line-height: 1.4;
+  font-size: 14px;
+  opacity: 0.8;
+}
+footer .foot-box1 .sns ul{
+  display: flex;
+}
+footer .foot-box1 .sns ul li{
+  width: 40px;
+  height: 40px;
+  border-radius: 1000px;
+  border: 1px solid #FFB0DA;
+  margin-left: 10px;
+}
+footer .foot-box1 .sns ul li a img{
+  width: 100%;
+}
+
+footer .foot-box2{
+  position: absolute;
+  width: 1440px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot-box2 .copyright{
+  font-size: 14px;
+  opacity: 0.6;
+}
+footer .foot-box2 .prize ul{
+  display: flex;
+}
+footer .foot-box2 .prize ul li{
+  height: 25px;
+  margin-left: 15px;
+}
+footer .foot-box2 .prize ul li a img{
+  height: 100%;
+  opacity: 0.6;
+}
+
+
+
+
+/* tablet -----------------------------------------------
+--------------------------------------------------------------------- */
+@media all and (max-width: 800px) {
+  header h1{
+    left: 0;
+    right: 0;
+    margin: 10px auto;
+  }
+  header .info ul{
+    /* justify-content: space-around !important; */
+    margin-right: 10px;
+  }
+  header nav{
+    display: none;
+  }
+  header .mo-nav{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    z-index: 100;
+  }
+  header div.mo-nav span{
+    background: #333;
+  }
+  header div.mo-nav span:first-child{
+    margin-bottom: 5px;
+    width: 30px;
+    height: 3px;
+  }
+  header div.mo-nav span:nth-child(2){
+    margin-bottom: 5px;
+    width: 30px;
+    height: 3px;
+  }
+  header div.mo-nav span:last-child{
+    width: 23px;
+    height: 3px;
+    margin-left: 7px;
+  }
+
+  .main-visual{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    top: 0;
+    left: 0;
+  }
+  .main-visual .visual__img{
+    width: 400px;
+  }
+  .main-visual .visual__img img{
+    width: 100%;
+  }
+  .main-visual .typo{
+    text-align: center;
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50% , -50%);
+  }
+  .main-visual .typo h3{
+    font-size: 36px;
+    color: #F04DA3;
+    font-family: "RixInooAriDuriR";
+    font-weight: normal;
+  }
+  .main-visual .typo p{
+    font-family: "RixInooAriDuriR";
+    font-size: 28px;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F04DA3;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .youtube{
+    width: 100%;
+    height: 800px;
+    position: relative;
+  }
+  .youtube .youtube-area #player{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 450px;
+  }
+  .youtube .youtube-area div.typo1{
+    display: flex;
+    position: absolute;
+    top: 500px;
+    left: 6.25%;
+  }
+  .youtube .youtube-area div.typo2{
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: 500px;
+  }
+  .brmenu{
+    width: 100%;
+    height: 900px;
+    background-color: #F8F8F8;
+  }
+  .brmenu h3{
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+  .brmenu .inner{
+    width: 84.94623655913978%;
+  }
+  .brmenu .inner .contents1{
+    top: 150px;
+    width: 361px;
+    height: 262px;
+  }
+  .brmenu .inner .contents1 span{
+    font-size: 18px;
+    top: 20px;
+    left: 20px;
+  }
+  .brmenu .inner .contents1 p{
+    font-size: 18px;
+    top: 60px;
+    left: 20px;
+  }
+  .brmenu .inner .contents1 button{
+    width: 110px;
+    height: 40px;
+    left: 20px;
+  }
+  .brmenu .inner .contents1 div{
+    width: 239px;
+  }
+  .brmenu .inner .contents1 div img{
+    width: 100%;
+  }
+  .brmenu .inner .contents2{
+    top: 150px;
+    width: 239px;
+    height: 262px;
+  }
+  .brmenu .inner .contents2 span{
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .brmenu .inner .contents2 p{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents2 button{
+    width: 100px;
+    height: 40px;
+    left: 20px;
+  }
+  .brmenu .inner .contents2 div{
+    position: absolute;
+    right: -40px;
+    bottom: -30px;
+    width: 210px;
+  }
+  .brmenu .inner .contents3{
+    width: 284px;
+    height: 262px;
+  }
+  .brmenu .inner .contents3 span{
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents3 p{
+    top: 60px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents3 button{
+    width: 100px;
+    height: 40px;
+    left: 20px;
+  }
+  .brmenu .inner .contents3 div{
+    position: absolute;
+    right: -55px;
+    bottom: -30px;
+    width: 270px;
+  }
+  .brmenu .inner .contents4{
+    top: 186px;
+    width: 314px;
+    height: 262px;
+  }
+  .brmenu .inner .contents4 span{
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents4 p{
+    top: 60px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents4 button{
+    width: 100px;
+    height: 40px;
+    left: 20px;
+  }
+  .brmenu .inner .contents4 div{
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 200px;
+  }
+  .brmenu .inner .contents5{
+    width: 300px;
+    height: 262px;
+  }
+  .brmenu .inner .contents5 span{
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents5 p{
+    top: 90px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents5 button{
+    width: 100px;
+    height: 40px;
+    left: 20px;
+  }
+  .brmenu .inner .contents5 div{
+    position: absolute;
+    right: -10px;
+    bottom: -20px;
+    width: 180px;
+  }
+  .brmenu .inner .contents6{
+    width: 300px;
+    height: 262px;
+  }
+  .brmenu .inner .contents6 span{
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents6 p{
+    top: 60px;
+    left: 20px;
+    font-size: 18px;
+  }
+  .brmenu .inner .contents6 button{
+    width: 100px;
+    height: 40px;
+    left: 20px;
+  }
+  .brmenu .inner .contents6 div{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 150px;
+  }
+  .brevent div.inner{
+    width: 82.25806451612903%;
+  }
+  .brevent .inner .slider-area #slider-div .cont .contbox{
+    width: 90%;
+  }
+  .brevent .inner .slider-area #slider-div .cont .contbox .cont__main-img{
+    width: 100%;
+  }
+  .brevent .inner .slider-area #slider-div .cont .contbox .cont__main-img img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .brevent .inner .slider-area #slider-div .cont .contbox .cont__sub-img{
+    margin: 20px;
+  }
+  .brevent .inner .slider-area #slider-div .cont .contbox .cont__typo{
+    margin: 20px;
+    line-height: 1.5;
+  }
+  .brevent .inner .slider-area #slider-div .cont .contbox .cont__typo span{
+    font-size: 14px;
+    opacity: 0.5;
+  }
+  footer{
+    height: 440px;
+  }
+  footer h1{
+    margin: 20px auto;
+  }
+  footer nav{
+    top: 90px;
+  }
+  footer nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer nav ul li{
+    text-align: center;
+  }
+  footer nav ul li a{
+    line-height: 80px;
+  }
+  footer .foot-box1{
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .foot-box1 address{
+    line-height: 1.4;
+    font-size: 14px;
+    opacity: 0.8;
+    text-align: center;
+  }
+  footer .foot-box1 .sns{
+    margin-top: 15px;
+  }
+  
+  footer .foot-box2{
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .foot-box2 .copyright{
+    font-size: 14px;
+    opacity: 0.6;
+    order: 2;
+    margin-top: 20px;
+  }
+  footer .foot-box2 .prize{
+    order: 1;
+  }
+
+
+
+} /* talbet end !!!!!!! */
+
+/* mobile --------------------------------------------
+----------------------------------------------------------- */
+@media all and (max-width: 600px) { 
+
+  .youtube .youtube-area .typo1{
+    display: flex;
+    position: absolute;
+    left: 12.5% !important;
+  }
+  .youtube .youtube-area .typo1 h3{
+    font-size: 20px;
+  }
+  .youtube .youtube-area .typo1 span{
+    display: none;
+  }
+  
+  .youtube .youtube-area .typo2{
+    position: absolute;
+    top: 550px !important;
+    left: 12.5% !important;
+  }
+  .youtube .youtube-area .typo2 p{
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .brmenu{
+    width: 100%;
+    height: 1900px;
+    background-color: #F8F8F8;
+  }
+  .brmenu h3{
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 12.5%;
+  }
+  .brmenu .inner{
+    width: 86.70212765957447%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .brmenu .inner .contents{
+    width: 86.70212765957447%;
+    height: 250px;
+    border-radius: 5px;
+    margin: 0 auto 50px;
+  }
+
+  .brmenu .inner .contents1{
+    top: 130px;
+  }
+  .brmenu .inner .contents1 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+  }
+  .brmenu .inner .contents1 p{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .brmenu .inner .contents button{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background: #FFB0DA;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); */
+  }
+
+  .brmenu .inner .contents1 div{
+    width: 250px;
+    right: -20px;
+  }
+
+  .brmenu .inner .contents2{
+    top: 120px;
+  }
+  .brmenu .inner .contents2 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .brmenu .inner .contents2 p{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .brmenu .inner .contents2 div{
+    position: absolute;
+    right: -50px;
+    bottom: -40px;
+    width: 300px;
+  }
+  .brmenu .inner .contents3{
+    top: 110px;
+  }
+  .brmenu .inner .contents3 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .brmenu .inner .contents3 p{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .brmenu .inner .contents3 div{
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
+    width: 300px;
+  }
+  .brmenu .inner .contents4{
+    top: 100px;
+  }
+  .brmenu .inner .contents4 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .brmenu .inner .contents4 p{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .brmenu .inner .contents4 div{
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 210px;
+  }
+  .brmenu .inner .contents5{
+    top: 90px;
+  }
+  .brmenu .inner .contents5 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .brmenu .inner .contents5 p{
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .brmenu .inner .contents5 div{
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 200px;
+  }
+  .brmenu .inner .contents6{
+    top: 80px;
+  }
+  .brmenu .inner .contents6 span{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .brmenu .inner .contents6 p{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    font-size: 16px;
+  }
+  .brmenu .inner .contents6 div{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 160px;
+  }
+  .br-ad{
+    width: 100%;
+  
+  }
+  .br-ad .ad__box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .br-ad .ad__box img{
+    width: 100%;
+  }
+  .br-ad .ad-img{
+    width: 100%;
+    height: 100px;
+  }
+  .br-ad .ad-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+} /* mobile end!!!!!!!!!!!!!!!! */
+
+
+
