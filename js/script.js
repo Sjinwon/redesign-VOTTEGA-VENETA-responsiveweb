@@ -1,4 +1,9 @@
-$(document).ready(function(){
+/* 
+smooth scroll script 
+(별로 안 스무스함)
+*/
+
+/* $(document).ready(function(){
   // $fn.scrollSpeed(step, speed, easing);
   jQuery.scrollSpeed(200, 800);
 });
@@ -99,4 +104,23 @@ jQuery.easing.default = function (x,t,b,c,d) {
     return -c * ((t=t/d-1)*t*t*t - 1) + b;
 };
 
-})(jQuery);
+})(jQuery); */
+
+/* 더보기 btn */
+function showMore() {
+    const hide = document.querySelectorAll('.hide');
+    // 첫번째 배열 표시
+    // .from : 변수를 배열로 바꾸기 .slice : 배열 쪼개서 표현
+    const first = Array.from(hide).slice(0, 4);
+    // forEach : 각각의 배열에 함수들을 실행할때 씀.
+    first.forEach(item => {
+        item.classList.remove('hide');
+    });
+    if (hide.length <= 4) {
+        hideMoreButton();
+    }
+    };
+
+    function hideMoreButton() {
+    document.getElementById('moreBtn').classList.add('hide');
+    };

@@ -30,7 +30,7 @@
 
 
 
-/* header */
+/* header area */
 header{
   width: 100%;
   height: 200px;
@@ -42,9 +42,10 @@ header{
 }
 header .menu{
   position: absolute;
-  left: 100px;
+  left: 5%;
   top: 93px;
   z-index: 101;
+  cursor: pointer;
 }
 header .menu .line1{
   width: 45px;
@@ -68,7 +69,7 @@ header h1 a img{
 
 header div.info{
   position: absolute;
-  right: 100px;
+  right: 5%;
   top: 93px;
 }
 header div.info ul{
@@ -76,8 +77,14 @@ header div.info ul{
 }
 header div.info ul li{padding: 0 15px;}
 header div.info ul li a{
+  padding: 5px;
   font-family: "Kano";
   font-size: 1.500em;
+  transition: all 0.3s;
+}
+header div.info ul li a:hover{
+  border-bottom: 1px solid #000;
+  opacity: 0.7;
 }
 
 /* main visual */
@@ -103,9 +110,12 @@ header div.info ul li a{
   right: 0;
   bottom: 0;
 }
-.main-visual .img-box img{
+.main-visual .img-box .pc-img{
   width: 100%;
   display: block;
+}
+.main-visual .img-box .tab-img{
+  display: none;
 }
 .main-visual p{
   position: absolute;
@@ -130,36 +140,33 @@ header div.info ul li a{
   display: flex;
   justify-content: space-between;
 }
-.slide-area #slider-div .cont{
+.slide-area #slider-div .slider__cont{
   width: 350px;
   height: 600px;
 }
-.slide-area #slider-div .cont1{}
-.slide-area #slider-div .cont2{}
-.slide-area #slider-div .cont3{}
-.slide-area #slider-div .cont4{}
 
-.slide-area #slider-div .cont .img-box{
+.slide-area #slider-div .slider__cont .img-box{
   width: 350px;
 }
-.slide-area #slider-div .cont .img-box img{
+.slide-area #slider-div .slider__cont .img-box img{
   width: 100%;
 }
-.slide-area #slider-div .cont p:nth-child(2){
+.slide-area #slider-div .slider__cont p:nth-child(2){
   font-size: 1.250em;
   padding: 10px;
 }
-.slide-area #slider-div .cont .price{
+.slide-area #slider-div .slider__cont .price{
   font-size: 1.000em;
   padding-left: 10px;
   font-family: "AppleSDGothicNeoB";
 }
-.slide-area #slider-div .cont p:last-child{
+.slide-area #slider-div .slider__cont p:last-child{
   font-size: 1.000em;
   padding-left: 10px;
   opacity: 0.7;
 }
 
+/* wide img area */
 .wide-img{
   width: 100%;
   position: relative;
@@ -189,6 +196,7 @@ header div.info ul li a{
 }
 .wide-img .img-box img{
   width: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 .wide-img .img-box .line{
@@ -197,4 +205,349 @@ header div.info ul li a{
   background-color: black;
   position: absolute;
   bottom: 0;
+}
+.load-hidden{
+  visibility: hidden;
+}
+
+/* scroll contents area */
+.contents{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contents .cont{
+  width: 25%;
+}
+.contents .cont .img-box{
+  width: 100%;
+}
+.contents .cont .img-box img{
+  width: 100%;
+}
+.contents .cont p:nth-child(2){
+  font-size: 1.500em;
+  padding: 10px 10px 15px 10px;
+}
+.contents .cont span{
+  font-size: 1.250em;
+  padding: 0 0 0 10px;
+  font-family: "AppleSDGothicNeoB";
+}
+.contents .cont p:last-child{
+  font-size: 1.250em;
+  padding: 0 0 0 10px;
+  opacity: 0.7;
+}
+.contents .cont1 .img-box{
+  width: 100%;
+}
+.contents .cont1 .img-box img{
+  height: 100%;
+}
+
+.contents .cont6,
+.contents .cont8,
+.contents .cont10,
+.contents .cont12,
+.contents .cont14,
+.contents .cont16,
+.contents .cont18,
+.contents .cont20{
+  margin-top: 5%;
+}
+
+#moreBtn{
+  margin: auto;
+  width: 140px;
+  height: 60px;
+  border: 2px solid #000;
+  text-align: center;
+  line-height:65px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "AppleSDGothicNeoB";
+}
+
+.hide{
+  display: none;
+}
+
+footer{
+  margin-top: 100px;
+  width: 100%;
+  height: 386px;
+  background-color: #000;
+  position: relative;
+}
+footer div.img-box{
+  width: 100%;
+  height: 90px;
+}
+footer div.img-box img{
+  width: 100%;
+  height: 90px;
+  object-fit: cover;
+}
+footer div.logo-box{
+  width: 370px;
+  margin: 50px auto 50px;
+}
+footer div.logo-box a img{
+  width: 100%;
+}
+footer nav{
+  width: 1440px;
+  margin: auto;
+}
+footer nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+footer nav ul li a{
+  color: #fff;
+  transition: all 0.4s;
+  padding: 5px;
+}
+footer nav ul li a:hover{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+footer p{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+/* tablet -----------------------------------------------------*/
+@media all and ( max-width: 1000px) {
+  header div.info{
+    left: 0%;
+    right: 0%;
+    margin: auto;
+    top: 160px;
+  }
+  header div.info ul{
+    display: flex;
+    justify-content: center;
+  }
+  header div.info ul li a{
+    color: #fff;
+  }
+  header div.info ul li a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  .slide-area{
+    height: 670px;
+  }
+  .main-visual{
+    width: 100%;
+    height: 100vh;
+  }
+  .main-visual p{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    color: #fff;
+    font-size: 4.000em;
+  }
+  .main-visual div.black-bg{
+    width: 100%;
+  }
+  .main-visual .img-box{
+    width: 90%;
+    height: 75%;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+  }
+  .main-visual .img-box .pc-img{
+    display: none;
+  }
+  .main-visual .img-box .tab-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .wide-img{
+    height: 700px;
+  }
+  .wide-img .img-box{
+    height: 100%;
+  }
+  .wide-img .img-box p{
+    font-size: 1.750em;
+  }
+  .wide-img .img-box img{
+    height: 100%;
+  }
+  
+  .slide-area #slider-div{
+    width: 720px;
+  }
+  .slide-area #slider-div .slider__cont .img-box{
+    width: 350px;
+  }
+  .contents .cont{
+    width: 50%;
+  }
+  .contents .cont1,
+  .contents .cont3,
+  .contents .cont5,
+  .contents .cont7,
+  .contents .cont9,
+  .contents .cont11,
+  .contents .cont13,
+  .contents .cont15,
+  .contents .cont17,
+  .contents .cont19{
+    margin-top: -50px;
+}
+.contents .cont p:nth-child(2){
+  font-size: 1.250em;
+  padding: 10px 10px 15px 10px;
+}
+.contents .cont span{
+  font-size: 1.000em;
+  padding: 0 0 0 10px;
+  font-family: "AppleSDGothicNeoB";
+}
+.contents .cont p:last-child{
+  font-size: 1.000em;
+  padding: 0 0 0 10px;
+  opacity: 0.7;
+}
+
+#moreBtn{
+  margin: 50px auto;
+  width: 120px;
+  height: 50px;
+  border: 2px solid #000;
+  text-align: center;
+  line-height:55px;
+  font-size: 1.000em;
+  cursor: pointer;
+  font-family: "AppleSDGothicNeoB";
+}
+
+  footer nav{
+    width: 90%;
+    margin: auto;
+  }
+  footer nav ul li a{
+    display: block;
+    font-size: 0.875em;
+  }
+  footer p{
+    font-size: 0.875em;
+  }
+
+} /* tablet end!!!!! */
+
+@media all and ( max-width:501px ) {
+  header h1{
+    width: 250px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 40px;
+    position: absolute;
+  }
+  header h1 a img{
+    width: 100%;
+  }
+  header .menu{
+    top: 50px;
+  }
+  header .menu .line1{
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+  }
+  header .menu .line2{
+    width: 25px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+
+  header div.info{
+    top: 100px;
+  }
+  header div.info ul li a{
+    padding: 5px;
+    font-family: "Kano";
+    font-size: 1.125em;
+    transition: all 0.3s;
+  }
+  header div.info ul li a:hover{
+    border-bottom: 1px solid #000;
+    opacity: 0.7;
+  }
+
+  .main-visual{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+  .main-visual div.black-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0;
+  }
+  .main-visual .img-box{
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .main-visual p{
+    left: 5%;
+    bottom: 10%;
+    font-size: 3.000em;
+  }
+
+  .slide-area{
+    height: 750px;
+  }
+  .slide-area #slider-div{
+    width: 90%;
+    height: 650px;
+    margin: auto;
+  }
+  .slide-area #slider-div .slider__cont .img-box{
+    width: 400px;
+    margin: auto;
+  }
+  footer{
+    height: 300px;
+  }
+  footer div.logo-box{
+    width: 250px;
+    margin: 40px auto 30px;
+  }
+  footer div.logo-box a img{
+    width: 100%;
+  }
+  footer nav ul li a{
+    display: block;
+    font-size: 0.750em;
+  }
+  footer p{
+    font-size: 0.750em;
+  }
+
 }
