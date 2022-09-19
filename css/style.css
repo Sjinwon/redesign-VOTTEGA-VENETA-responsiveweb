@@ -183,7 +183,7 @@ header div.info ul li a:hover{
   left: 50%;
   transform: translate(-50%,-50%);
   margin: auto;
-  font-size: 70px;
+  font-size: 4.000em;
   font-family: "AppleSDGothicNeoEB";
 }
 .wide-img .img-box .opacity-bg{
