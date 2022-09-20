@@ -147,23 +147,37 @@ header div.info ul li a:hover{
 
 .slide-area #slider-div .slider__cont .img-box{
   width: 350px;
+  position: relative;
 }
 .slide-area #slider-div .slider__cont .img-box img{
   width: 100%;
+  position: absolute;
+}
+.slide-area #slider-div .slider__cont .img-box .img-box__hide{
+  display: none;
+}
+.slide-area #slider-div .slider__cont .img-box:hover .img-box__hide{
+  display: block;
 }
 .slide-area #slider-div .slider__cont p:nth-child(2){
+  position: absolute;
   font-size: 1.250em;
   padding: 10px;
+  bottom: 150px;
 }
 .slide-area #slider-div .slider__cont .price{
+  position: absolute;
   font-size: 1.000em;
   padding-left: 10px;
   font-family: "AppleSDGothicNeoB";
+  bottom: 120px;
 }
 .slide-area #slider-div .slider__cont p:last-child{
+  position: absolute;
   font-size: 1.000em;
   padding-left: 10px;
   opacity: 0.7;
+  bottom: 100px;
 }
 
 /* wide img area */
@@ -221,9 +235,15 @@ header div.info ul li a:hover{
 }
 .contents .cont .img-box{
   width: 100%;
+  overflow: hidden;
 }
 .contents .cont .img-box img{
   width: 100%;
+  transition: all 0.1s linear;
+  overflow: hidden;
+}
+.contents .cont .img-box img:hover{
+  transform:  scale(1.1);
 }
 .contents .cont p:nth-child(2){
   font-size: 1.500em;
